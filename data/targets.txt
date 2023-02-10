@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/eth_getTransactionByBlockNumberAndIndex?blockNumber=0xD59F80&index=0x10
+GET http://localhost:8080/api/eth_getBlockByNumber?blockNumber=0xD59F80&includeTransactions=true
+GET http://localhost:8080/api/eth_getBlockByNumber?blockNumber=latest&includeTransactions=true
+GET http://localhost:8080/api/eth_getBlockByNumber?blockNumber=0xD59F80&includeTransactions=false
+GET http://localhost:8080/api/eth_getBlockByNumber?blockNumber=latest&includeTransactions=false
+GET http://localhost:8080/api/eth_gasPrice
+GET http://localhost:8080/api/eth_protocolVersion
+GET http://localhost:8080/api/eth_getWork
+GET http://localhost:8080/api/web3_clientVersion
+GET http://localhost:8080/api/eth_mining
+GET http://localhost:8080/api/eth_gasPrice
+GET http://localhost:8080/api/eth_syncing
+GET http://localhost:8080/api/eth_blockNumber
+GET http://localhost:8080/api/eth_getLogs

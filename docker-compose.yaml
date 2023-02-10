@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    container_name: ethereum-jsonrpc-to-rest
+    build: .
+    ports:
+      - 8080:8080
+    restart: on-failure
+    volumes:
+      - api:/usr/src/app/
+
+    networks:
+      - ethereum-jsonrpc-to-rest
+
+volumes:
+  api:
+
+networks:
+  ethereum-jsonrpc-to-rest:
+    driver: bridge
